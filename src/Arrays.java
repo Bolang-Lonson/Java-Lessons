@@ -11,6 +11,17 @@ public class Arrays {
             total += myList[i];
         }
         System.out.println("Total is "+total);
-        // Finding largest e
+        // Finding largest element
+        double max = myList[0];
+        for (int i = 1; i < myList.length; i++){
+            if (myList[i] > max){
+                max = myList[i];
+            }
+        }
+        System.out.println("Max is "+max);
+        // printing all elements
+        for (double elt: myList){
+            System.out.println(elt);
+        }
     }
 }
